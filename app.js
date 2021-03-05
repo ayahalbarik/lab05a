@@ -9,11 +9,20 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function sum(a, b) { //eslint-disable-line
-
+    let sum = a + b ; 
+    let con1 =a;
+    let con2 =b;
+    const conca ='${con1}${con2}';
+    let array = [sum,'The sum of ' + a + ' and ' + b + ' is ' + sum ,conca];
+    // console.log(myArray);
+    return array;
 }
+console.log(sum(4,7))
+// Here is the test for sum(); uncomment it to run it
+
 
 // Here is the test for sum(); uncomment it to run it
-// testSum(4, 7);
+testSum(4, 7);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
