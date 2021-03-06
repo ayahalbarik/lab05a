@@ -41,7 +41,7 @@ function multiply(a, b) { //eslint-disable-line
     // console.log(myArray);
     return myArray
 }
-console.log(multiply(2,3))
+console.log(multiply(5,9))
 // Here is the test for multiply(); uncomment it to run it
 // testMultiply(5,9);
 
@@ -60,11 +60,23 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function sumAndMultiply(a, b, c) { //eslint-disable-line
-
-}
-
+    let myArray = []
+    let s1 = sum(a, b)[0];
+    let s2 = sum(s1, c)[0];
+   // myArray[0] = s2;
+  
+    let m1 = multiply(a, b)[0];
+    let m2 = multiply(m1, c)[0];
+   // myArray[1] =m2;
+  
+    myArray[2] = `${a} sum ${b} sum ${c}is  ${s2}.`
+     myArray[3] = `Theresult of ${a} mul ${b} mul ${c} is ${m2}.`
+    console.log(myArray)
+    return myArray;
+} 
+//console.log(sumAndMultiply,(4,7,5))
 // Here is the test for sumAndMultiply(); uncomment it to run it
-// testSumAndMultiply(4,7,5);
+ testSumAndMultiply(4,7,5);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
