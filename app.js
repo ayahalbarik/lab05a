@@ -43,7 +43,7 @@ function multiply(a, b) { //eslint-disable-line
 }
 console.log(multiply(5,9))
 // Here is the test for multiply(); uncomment it to run it
-// testMultiply(5,9);
+ testMultiply(5,9);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -95,12 +95,16 @@ Test this function by hand in the console to get it working, and when you think 
 var testArray = [2, 3, 4]; //eslint-disable-line
 
 function sumArray(sumArr) { //eslint-disable-line
-
+    let summ = sum(sumArr[0],sumArr[1])[0];
+    let suumm = sum(summ,sumArr[2] )[0];
+    let array = [suumm, sumArr[0]+ ',' + sumArr[1] + ','+ sumArr[2] +' was passed in as an array of numbers, and ' + suumm + ' is their sum.'];
+    // console.log(myArray);
+    return array;
 }
-
+ //console.log(myArray,(2,3,4));
 // Here is the test for sumArray(); uncomment it to run it
 
-// testSumArray(testArray);
+ testSumArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
