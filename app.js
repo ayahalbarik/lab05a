@@ -73,6 +73,7 @@ function sumAndMultiply(a, b, c) { //eslint-disable-line
      myArray[3] = `Theresult of ${a} mul ${b} mul ${c} is ${m2}.`
     console.log(myArray)
     return myArray;
+    //console.log(sumAndMultiply,(4,7,5))
 } 
 //console.log(sumAndMultiply,(4,7,5))
 // Here is the test for sumAndMultiply(); uncomment it to run it
