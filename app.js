@@ -95,11 +95,15 @@ Test this function by hand in the console to get it working, and when you think 
 var testArray = [2, 3, 4]; //eslint-disable-line
 
 function sumArray(sumArr) { //eslint-disable-line
-    let summ = sum(sumArr[0],sumArr[1])[0];
-    let suumm = sum(summ,sumArr[2] )[0];
-    let array = [suumm, sumArr[0]+ ',' + sumArr[1] + ','+ sumArr[2] +' was passed in as an array of numbers, and ' + suumm + ' is their sum.'];
-    // console.log(myArray);
-    return array;
+   let apparray = [];
+    let suum = sum((sumArr[0]), (sumArr[1]));
+    suum = suum[0];
+    let EndSum = sum(suum, sumArr[2])[0];
+    apparray[0] = EndSum;
+  
+   apparray[1] = `${sumArr[0]},${sumArr[1]},${sumArr[2]} was passed in as an array of numbers, and ${EndSum} is their sum.`
+    console.log(apparray)
+    return apparray; 
 }
  //console.log(myArray,(2,3,4));
 // Here is the test for sumArray(); uncomment it to run it
@@ -120,11 +124,22 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiplyArray(multArr) { //eslint-disable-line
-
+    let Array = [];
+    let array2 = multiply((multArr[0]), (multArr[1]));
+    array2 = array2[0];
+  
+    let array3 = multiply(array2, multArr[2]);
+    array3 = array3[0];
+    Array[0] = array3;
+  
+    Array[1] = `The numbers ${multArr[0]},${multArr[1]},${multArr[2]} have a product of ${array3}.`
+    console.log(Array)
+    return Array;
+    //console.log(multArr)
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it
-// testMultiplyArray(testArray);
+ testMultiplyArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. 
 
@@ -148,7 +163,17 @@ Test this function by hand in the console to get it working, and when you think 
 var testDynamicArray = [1,2,3,4,5]; //eslint-disable-line
 
 function multiplyAnyArray(dynamicArray) { //eslint-disable-line
-
+    let Q5ReturnArray = [];
+    let aVariableb = multiply((multArr[0]), (multArr[1]));
+    aVariableb = aVariableb[0];
+  
+    let EndProduct = multiply(aVariableb, multArr[2]);
+    EndProduct = EndProduct[0];
+    Q5ReturnArray[0] = EndProduct;
+  
+    Q5ReturnArray[1] = `The numbers ${multArr[0]},${multArr[1]},${multArr[2]} have a product of ${EndProduct}.`
+    console.log(Q5ReturnArray)
+    return Q5ReturnArray;
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it
